@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="newGameButton" disable="true" layoutX="26.0" layoutY="584.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="42.0" prefWidth="150.0" text="New Game">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="588.0" prefHeight="53.0" prefWidth="175.0" text="Click this button to display&#10;application responsiveness&#10;while the computer is &quot;thinking&quot;" />
+      <Label fx:id="box00" layoutX="26.0" layoutY="26.0" onMouseClicked="#box00Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box01" layoutX="175.0" layoutY="26.0" onMouseClicked="#box01Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box02" layoutX="324.0" layoutY="26.0" onMouseClicked="#box02Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box10" layoutX="26.0" layoutY="182.0" onMouseClicked="#box10Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box11" layoutX="175.0" layoutY="182.0" onMouseClicked="#box11Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box12" layoutX="324.0" layoutY="182.0" onMouseClicked="#box12Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box20" layoutX="26.0" layoutY="338.0" onMouseClicked="#box20Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box21" layoutX="175.0" layoutY="338.0" onMouseClicked="#box21Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="box22" layoutX="324.0" layoutY="338.0" onMouseClicked="#box22Clicked" prefHeight="157.0" prefWidth="150.0" scaleShape="false" style="-fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 4; -fx-alignment: center; -fx-cursor: hand;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Line fx:id="winnerLine" endX="400.0" endY="13.0" opacity="0.0" startX="100.0" startY="13.0" stroke="RED" strokeLineCap="ROUND" strokeWidth="15.0" />
+      <Label fx:id="messageBox" layoutX="27.0" layoutY="518.0" prefHeight="42.0" prefWidth="447.0" style="-fx-alignment: center; -fx-background-color: greenyellow;" text="Player Turn!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="counterButton" layoutX="399.0" layoutY="599.0" mnemonicParsing="false" onAction="#incrementCounter" text="Click Me?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="counterLabel" layoutX="401.0" layoutY="560.0" prefHeight="30.0" prefWidth="75.0" style="-fx-alignment: center;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
